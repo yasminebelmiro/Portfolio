@@ -1,15 +1,14 @@
 import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 
-import Cv from "./pages/Cv/cv";
-import Projects from "./pages/Projects/projects";
-import Contacts from "./pages/Contacts/Contacts";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-
-import Header from "./components/Header/Header";
 import { GlobalContainer } from "./global";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/projects";
+import Cv from './pages/Cv/Cv'
+import Contacts from "./pages/Contacts/Contacts";
 
+import Header from './components/Header/Header'
+import Home from "./pages/Home/Home";
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,8 +20,6 @@ const App = () => {
           <Route path="/" element={<About />} />
           <Route path="/curriculo" element={<Cv />} />
           <Route path="/projetos" element={<Projects />} />
-          <Route path="/projetos/aplicacoes/" element={<Projects />} />
-          <Route path="/projetos/protitipagem/" element={<Projects />} />
           <Route path="/contatos" element={<Contacts />} />
         </Routes>
       </GlobalContainer>
