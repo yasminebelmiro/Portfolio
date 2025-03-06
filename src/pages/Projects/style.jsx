@@ -30,6 +30,7 @@ export const ProjectCard = styled.div`
 export const Image = styled.img`
   width: 300px;
   height: 139px;
+  border-radius: 20px;
 `;
 
 export const Column = styled.div`

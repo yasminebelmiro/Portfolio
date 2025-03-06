@@ -38,10 +38,12 @@ const Home = () => {
           devyasminebelmiro@gmail.com
         </Text>
         <SocialContainer>
-          <SocialIcons as={FaLinkedin} />
-          <SocialIcons as={FaGithubSquare} />
-          <SocialIcons as={FaInstagramSquare} />
-          <SocialIcons as={FaSquareXTwitter} />
+          <a href="www.linkedin.com/in/yasmine-oliveira-belmiro-471612282">
+            <SocialIcons as={FaLinkedin} />
+          </a>
+          <a href="https://github.com/yasminebelmiro">
+            <SocialIcons as={FaGithubSquare} />
+          </a>
         </SocialContainer>
       </MobileColumnVariant>
     </HomeContainer>
