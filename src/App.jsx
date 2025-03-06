@@ -3,7 +3,7 @@ import { BrowserRouter,  Route, Routes } from "react-router-dom";
 
 import { GlobalContainer } from "./global";
 import About from "./pages/About/About";
-import Projects from "./pages/Projects/projects";
+import Projects from "./pages/Projects/Projects";
 import Cv from "./pages/Cv/Cv";
 import Contacts from "./pages/Contacts/Contacts";
 
