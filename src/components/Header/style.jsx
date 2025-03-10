@@ -55,7 +55,8 @@ export const Item = styled(Link)`
   justify-content: center;
   font-weight: bold;
 
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
+    @media (max-width: 400px) {
+    font-size: 1rem;
   }
+
 `;

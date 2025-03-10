@@ -81,7 +81,7 @@ const Projects = () => {
 
   return (
     <ProjectsContainer>
-      <Title style={{ textAlign: "center" }}>Projects</Title>
+      <Title style={{ textAlign: "center" }}>Projetos</Title>
 
       <ProjectsGrid>
         {projects.map((item) => (

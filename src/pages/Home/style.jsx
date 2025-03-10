@@ -9,9 +9,14 @@ export const HomeContainer = styled.section`
   align-items: center;
   color: white;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1100px) {
     width: 100%;
     height: auto;
+    padding: 30px;
+  }
+  @media (max-width: 400px) {
+
+    padding: 10px;
   }
 `;
 
@@ -21,10 +26,10 @@ export const MobileRow = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1100px) {
     width: 100%;
     flex-direction: row;
-    padding: 2%;
+
     gap: 20px;
   }
 `;
@@ -46,9 +51,13 @@ export const MobileColumnVariant = styled(MobileColumn)`
     width: 100%;
     flex-direction: column;
     align-items: start;
-    padding: 5%
-  }`
+    padding: 5%;
+  }
 
+  @media (max-width: 400px) {
+    padding: 0%;
+  }
+`;
 
 export const Image = styled.img`
   max-width: 100%;
@@ -64,16 +73,16 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.h1`
-  font-size: 25px;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 
   @media (max-width: 600px) {
-    font-size: 20px;
+    font-size: 1.1rempx;
   }
 `;
 
 export const Hole = styled.h2`
-  font-size: 18px;
+  font-size: 1.5rem;
   background-color: var(--purple);
   padding: 0.5rem;
   margin-bottom: 2rem;
@@ -84,14 +93,10 @@ export const Hole = styled.h2`
 `;
 
 export const Text = styled.p`
-  font-size: 18px;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   margin-bottom: 0.3rem;
-
-  @media (max-width: 600px) {
-    font-size: 15px;
-  }
 `;
 
 export const TextIcons = styled.div`
@@ -109,7 +114,7 @@ export const SocialContainer = styled.div`
 `;
 
 export const SocialIcons = styled.div`
-  font-size: 35px;
+  font-size: 50px;
   @media (max-width: 600px) {
     font-size: 33px;
     color: var(--purple);

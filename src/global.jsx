@@ -6,8 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --purple: #6A4D90;
     --purple-100: #1E0C25;
-    --purple-200: #6A1E55;
-    --purple-300: #967A8E;
+    --purple-300:rgb(232, 198, 222);
 }
 
 *{
@@ -18,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body{
     background-color:black;
-    font-family: "Courier Prime", serif;
+
 }
 `;
 
@@ -26,10 +25,9 @@ export const GlobalContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100vw;
-  
   padding-top: 30px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     width: auto;
     height: auto;
