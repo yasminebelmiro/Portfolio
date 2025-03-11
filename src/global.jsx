@@ -24,7 +24,7 @@ body{
 export const GlobalContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   padding-top: 30px;
 
   @media (max-width: 1100px) {

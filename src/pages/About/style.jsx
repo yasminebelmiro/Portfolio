@@ -21,9 +21,11 @@ export const AboutContainer = styled.section`
 `;
 
 export const Title = styled.h1`
-
+  font-size: 2rem;
   margin-bottom: 5%;
-
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -37,9 +39,12 @@ export const Description = styled.p`
 `;
 
 export const Subtitle = styled.h2`
-
+  font-size: 2rem;
   margin: 5% 0;
-
+  
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const LangageContent = styled.div`

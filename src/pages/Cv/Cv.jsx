@@ -12,6 +12,7 @@ import {
   Column,
   Name,
   Description,
+  Row,
 } from "./style";
 import { PiBagSimpleBold } from "react-icons/pi";
 import curriculum from "../../assets/curriculo.pdf";
@@ -42,16 +43,19 @@ const Cv = () => {
   return (
     <CvContainer>
       <Title>Curriculo</Title>
-      <a href={curriculum} download={"Curriculo-Yasmine"} >
+      <a href={curriculum} download={"Curriculo-Yasmine"}>
         <Button>Baixar pdf</Button>
       </a>
       <EducationContent>
-        <IconContainer>
-          <Icon as={LuBook} />
-        </IconContainer>
+        <Row>
+          <IconContainer>
+            <Icon as={LuBook} />
+          </IconContainer>
+          <Subtitle>Educação</Subtitle>
+        </Row>
 
         <DescriptionContent>
-          <Subtitle>Educação</Subtitle>
+         
           <Column>
             <Name>Bacharelado em Sitemas de informação(2022 - 2026)</Name>
             <Description>IF Goiano - Campus Urutaí</Description>
@@ -59,12 +63,14 @@ const Cv = () => {
         </DescriptionContent>
       </EducationContent>
       <EducationContent>
-        <IconContainer>
-          <Icon as={PiBagSimpleBold} />
-        </IconContainer>
+        <Row>
+          <IconContainer>
+            <Icon as={PiBagSimpleBold} />
+          </IconContainer>
+          <Subtitle>Experiência</Subtitle>
+        </Row>
 
         <DescriptionContent>
-          <Subtitle>Experiência</Subtitle>
           {ExperienceList.map((item) => (
             <Column key={item.id}>
               <Name>{item.name} </Name>

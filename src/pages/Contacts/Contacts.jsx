@@ -4,10 +4,11 @@ import {
   Button,
   ContactContainer,
   ContactForm,
-  LargeInput,
-  SmallInput,
+  Input,
   SocialContainer,
   SocialIcons,
+  TextArea,
+  Title,
 } from "./style";
 import { FaGithubSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -33,8 +34,8 @@ const Contacts = () => {
 
     const templateParams = {
       to_name: "Yasmine Belmiro",
-      from_name: formData.name,
-      reply_to: formData.email,
+      from_name: formData.from_name,
+      reply_to: formData.from_email,
       topic: formData.topic,
       message: formData.message,
     };
@@ -51,42 +52,45 @@ const Contacts = () => {
           setSuccess(true);
           setError(false);
           setIsSending(false);
-          setFormData({ name: "", email: "", topic: "", message: "" });
+          setFormData({
+            from_name: "",
+            from_email: "",
+            topic: "",
+            message: "",
+          });
+          alert("Mensagem enviada com sucesso!");
         },
         (err) => {
           console.error("Erro ao enviar: ", err);
           setSuccess(false);
           setError(true);
           setIsSending(false);
+          alert("Erro ao enviar messagem, tente novamente!");
         }
       );
-
-    success
-      ? alert("Mensagem enviada com sucesso!")
-      : alert("Erro ao enviar messagem, tente novamente!");
   };
 
   return (
     <ContactContainer>
-      <h1>Contatos</h1>
+      <Title>Contatos</Title>
       <ContactForm onSubmit={handleSubmit} method="POST">
-        <SmallInput
+        <Input
           type="text"
-          name="name"
+          name="from_name"
           placeholder="Nome completo"
           value={formData.name}
           onChange={handleChange}
           required
         />
-        <SmallInput
+        <Input
           type="email"
-          name="email"
+          name="from_email"
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
           required
         />
-        <SmallInput
+        <Input
           type="text"
           name="topic"
           placeholder="Assunto"
@@ -94,7 +98,7 @@ const Contacts = () => {
           onChange={handleChange}
           required
         />
-        <LargeInput
+        <TextArea
           type="text"
           name="message"
           placeholder="Escreva sua mensagem"
@@ -109,12 +113,13 @@ const Contacts = () => {
 
       <SocialContainer>
         <a
-          href="www.linkedin.com/in/yasmine-oliveira-belmiro-471612282"
+          href="https://www.linkedin.com/in/yasmine-oliveira-belmiro-471612282"
           target="_blank"
           rel="noopener noreferrer"
         >
           <SocialIcons as={FaLinkedin} />
         </a>
+
         <a
           href="https://github.com/yasminebelmiro"
           target="_blank"

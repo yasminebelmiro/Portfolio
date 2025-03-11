@@ -22,7 +22,11 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+    font-size: 2rem;
+  margin-bottom: 5%;
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const ProjectsGrid = styled.div`

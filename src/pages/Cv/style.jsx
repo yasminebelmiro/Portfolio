@@ -21,7 +21,11 @@ export const CvContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
+  }
+`;
 
 export const Button = styled.button`
   background-color: black;
@@ -38,17 +42,26 @@ export const Button = styled.button`
     background-color: white;
     color: black;
   }
+
+  @media (max-width: 400px) {
+    width: 150px;
+
+    font-size: 0.8rem;
+  }
 `;
 
 export const EducationContent = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
 `;
 
 export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width:60px;
   height: 60px;
   background-color: black;
   padding: 10px;
@@ -56,13 +69,14 @@ export const IconContainer = styled.div`
 
   @media (max-width: 600px) {
     height: 50px;
+    width:50px;
   }
 `;
 
 export const Icon = styled.div`
-  font-size: 38px;
+  font-size: 2rem;
   @media (max-width: 600px) {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
 `;
 
@@ -76,6 +90,13 @@ export const DescriptionContent = styled.div`
 export const Subtitle = styled.h2`
   margin-top: 15px;
   font-size: 1.6rem;
+  margin-left: 2rem;
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 600px) {
+    margin-left: 1rem;
+  }
 `;
 export const Column = styled.div`
   padding: 20px 0;
@@ -84,9 +105,20 @@ export const Column = styled.div`
 export const Name = styled.h3`
   font-size: 1.4rem;
   margin-bottom: 15px;
+  @media (max-width: 400px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 1.2rem;
   color: var(--purple-300);
+  @media (max-width: 400px) {
+    font-size: 0.9rem;
+  }
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
 `;

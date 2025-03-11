@@ -13,11 +13,18 @@ export const ContactContainer = styled.div`
   padding: 5%;
 
   @media (max-width: 1100px) {
-    height: auto;
     width: 95%;
     padding: 10%;
     margin-bottom: 90px;
     border-radius: 0px 45px 45px 0px;
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 2rem;
+
+  @media (max-width: 400px) {
+    font-size: 1.4rem;
   }
 `;
 
@@ -27,56 +34,71 @@ export const SocialIcons = styled.div`
 `;
 
 export const ContactForm = styled.form`
+width: 70%;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-   @media (max-width: 600px) {
 
-  }
+  @media(max-width: 600px){
+  width: 95%;}
 `;
 
-export const SmallInput = styled.input`
-  width: 494px;
+export const Input = styled.input`
+  width: 100%;
   height: 50px;
   border-radius: 20px;
-  border: none;
+  border: 2px solid transparent;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
   font-size: 18px;
   color: black;
-  @media (max-width: 600px) {
-    width: 100%;
+  transition: border 0.3s ease;
+
+  &::placeholder {
+    color: #aaa;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid var(--purple);
   }
 `;
 
-export const LargeInput = styled.input`
-  width: 494px;
+export const TextArea = styled.textarea`
+  width: 100%;
   height: 200px;
   border-radius: 20px;
-  border: none;
+  border: 2px solid transparent;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
   font-size: 18px;
   color: black;
+  resize: none;
+  transition: border 0.3s ease;
 
-  @media (max-width: 600px) {
-    width: 100%;
+  &::placeholder {
+    color: #aaa;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid var(--purple);
   }
 `;
 
 export const Button = styled.button`
-  width: 494px;
-  height: 40px;
+  width: 100%;
+  height: 50px;
   border: none;
   background-color: black;
   color: white;
   font-size: 18px;
   border-radius: 20px;
   cursor: pointer;
-    @media (max-width: 600px) {
-    width: 100%;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: var(--purple);
   }
 `;
 

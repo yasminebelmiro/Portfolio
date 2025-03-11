@@ -38,7 +38,7 @@ const Home = () => {
           devyasminebelmiro@gmail.com
         </Text>
         <SocialContainer>
-          <a href="www.linkedin.com/in/yasmine-oliveira-belmiro-471612282">
+          <a  href="https://www.linkedin.com/in/yasmine-oliveira-belmiro-471612282">
             <SocialIcons as={FaLinkedin} />
           </a>
           <a href="https://github.com/yasminebelmiro">

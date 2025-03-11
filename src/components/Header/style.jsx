@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.nav`
-  width: 100vw;
+  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -17,12 +17,9 @@ export const HeaderContainer = styled.nav`
 
 export const Left = styled.div`
   width: 30%;
-
   display: flex;
   align-items: center;
   justify-content: start;
-
-
 `;
 
 export const Right = styled.div`
@@ -37,7 +34,7 @@ export const Right = styled.div`
 
   @media (max-width: 600px) {
     width: 100%;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
   }
 `;
 

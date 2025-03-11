@@ -15,7 +15,6 @@ export const HomeContainer = styled.section`
     padding: 30px;
   }
   @media (max-width: 400px) {
-
     padding: 10px;
   }
 `;
@@ -43,6 +42,12 @@ export const MobileColumn = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
   }
 `;
 
@@ -77,18 +82,18 @@ export const Name = styled.h1`
   margin-bottom: 0.5rem;
 
   @media (max-width: 600px) {
-    font-size: 1.1rempx;
+    font-size: 1.7rem;
   }
 `;
 
 export const Hole = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   background-color: var(--purple);
   padding: 0.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
   @media (max-width: 600px) {
-    font-size: 15px;
+    font-size: 1rem;
   }
 `;
 
@@ -97,6 +102,10 @@ export const Text = styled.p`
   display: flex;
   align-items: center;
   margin-bottom: 0.3rem;
+
+  @media (max-width: 400px){
+  font-size: 1rem;
+  }
 `;
 
 export const TextIcons = styled.div`
@@ -107,16 +116,13 @@ export const TextIcons = styled.div`
 export const SocialContainer = styled.div`
   display: flex;
   margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
 
-  @media (max-width: 600px) {
-    gap: 14px;
-  }
 `;
 
 export const SocialIcons = styled.div`
-  font-size: 50px;
-  @media (max-width: 600px) {
-    font-size: 33px;
-    color: var(--purple);
-  }
+  font-size: 3rem;
+  color: var(--purple);
+
 `;
