@@ -7,6 +7,7 @@ export const HeaderContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 
   @media (max-width: 600px) {
     position: fixed;

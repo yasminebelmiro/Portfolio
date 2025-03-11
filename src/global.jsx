@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --purple: #6A4D90;
     --purple-100: #1E0C25;
-    --purple-300:rgb(232, 198, 222);
+    --purple-300:#e8c6de;
 }
 
 *{

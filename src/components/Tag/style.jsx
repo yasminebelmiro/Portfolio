@@ -7,6 +7,8 @@ const languageColors = {
   reactjs: "#61DAFB",
   mongodb: "#4DB33D",
   express: "#68A063",
+  github: "#6A4D90",
+  demo: "#6A4D90",
 };
 
 
